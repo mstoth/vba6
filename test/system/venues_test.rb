@@ -37,7 +37,6 @@ class VenuesTest < ApplicationSystemTestCase
     fill_in "Email", with: @venue.email
     fill_in "Name", with: @venue.name
     fill_in "Phone", with: @venue.phone
-    fill_in "User", with: @user.id
     click_on "Update Venue"
 
     assert_text "Venue was successfully updated"

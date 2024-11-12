@@ -3,7 +3,7 @@ class Group < ApplicationRecord
   validates_presence_of :title
   has_and_belongs_to_many :users
   has_many :concerts
-
+  validates_uniqueness_of :title
 
   def membercount
     return self.users.count
