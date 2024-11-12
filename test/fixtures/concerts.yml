@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Piano Times Two!
+  group_id: 1
+  venue_id: 1
+
+two:
+  title: Stephan and Michael
+  group_id: 2
+  venue_id: 2

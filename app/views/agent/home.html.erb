@@ -1,0 +1,22 @@
+
+<div class="container">
+
+<% if user_signed_in? %>
+  <h3>Welcome, <%= current_user.email %></h3>
+  <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } %>
+<% else %>
+  <h1>Home</h1>
+  <%= link_to 'Sign In', new_user_session_path %>
+<% end %>
+
+      <div class="jumbotron p-3 p-md-5 text-black rounded bg-light">
+        <div class="col-md-12 px-0">
+          <h3 class="small">A tool to connect musicians and venues.</h3>
+          <p class="lead my-2">
+            Sign up to find concerts and venues. 
+            </p>
+          <p class="lead mb-0"><a href="/agent/about" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+      </div>
+
+</div>

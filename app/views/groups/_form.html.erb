@@ -1,0 +1,59 @@
+<div class="container">
+  <%= form_with(model: group) do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+      <div class="row">
+        <div class="col-md-4">
+          <%= form.label :title, style: "display: block" %>
+          <%= form.text_field :title %>
+        </div>
+        <div class="col-md-4">
+          <%= form.label :contact, style: "display: block" %>
+          <%= form.text_field :contact %>
+        </div>
+        <div class="col-md-4">
+          <%= form.label :email, style: "display: block" %>
+          <%= form.text_field :email %>
+        </div>
+        <div class="col-md-4">
+          <%= form.label :phone, style: "display: block" %>
+          <%= form.text_field :phone %>
+        </div>
+        <div class="col-md-3">
+          <%= form.label :address, style: "display: block" %>
+          <%= form.text_field :address %>
+        </div>
+      </div>
+      
+      <div class="row">
+                <div class="col-md-1">
+        <%= form.check_box :joinable, {checked: group.joinable} %>
+
+        </div>
+                <div class="col-md-3">
+        <%= form.label :joinable %>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <%= form.label :avatar, style: "display: block" %>
+          <%= form.file_field :avatar %>
+        </div>
+        <div class="col-md-3">
+          <%= form.submit %>
+        </div>
+      </div>
+
+<% end %>
+</div>

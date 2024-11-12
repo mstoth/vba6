@@ -1,0 +1,32 @@
+<div id="<%= dom_id group %>" class="container">
+  <p>
+    <strong>Title:</strong>
+    <%= group.title %> (<% if group.joinable %> Joinable <% else %> Not Joinable <% end %>)
+  </p>
+
+  <p>
+    <strong>Contact:</strong>
+    <%= group.contact %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= group.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= group.phone %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= group.address %>
+  </p>
+
+  <p>
+    <strong>Avatar:</strong>
+    <%= link_to group.avatar.filename, group.avatar if group.avatar.attached? %>
+  </p>
+
+</div>

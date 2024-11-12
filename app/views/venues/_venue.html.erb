@@ -1,0 +1,37 @@
+<div id="<%= dom_id venue %>">
+  <p>
+    <strong>Name:</strong>
+    <%= venue.name %>
+  </p>
+
+  <p>
+    <strong>Contact:</strong>
+    <%= venue.contact %>
+  </p>
+
+  <p>
+    <strong>User Id:</strong>
+    <%= venue.user_id %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= venue.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= venue.phone %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= venue.address %>
+  </p>
+
+  <p>
+    <strong>Avatar:</strong>
+    <%= link_to venue.avatar.filename, venue.avatar if venue.avatar.attached? %>
+  </p>
+
+</div>

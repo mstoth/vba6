@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Prelude in C
+  composer: Bach
+  genre: Baroque
+  length: 3
+  publisher: unknown
+  isbn: unknown
+
+two:
+  title: Sonata in C Op. 2
+  composer: Beethoven
+  genre: Classical
+  length: 10
+  publisher: Unknown
+  isbn: Unknown

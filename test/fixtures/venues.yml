@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Michael's Place
+  contact: Michael Toth
+  email: michael@virtualpianist.com
+  phone: 610-216-4131
+  address: 1716 Elm St., Allentown, PA, 18017
+  user_id: 1
+
+two:
+  name: Myra's Place
+  contact: Myra Fenza
+  email: myra@rcn.com
+  phone: 610-797-8159
+  address: 2830 Old South Pike Ave., Allentown, PA, 18104
+  user_id: 2

@@ -1,0 +1,47 @@
+<%= form_with(model: piece) do |form| %>
+  <% if piece.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(piece.errors.count, "error") %> prohibited this piece from being saved:</h2>
+
+      <ul>
+        <% piece.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :composer, style: "display: block" %>
+    <%= form.text_field :composer %>
+  </div>
+
+  <div>
+    <%= form.label :genre, style: "display: block" %>
+    <%= form.text_field :genre %>
+  </div>
+
+  <div>
+    <%= form.label :length, style: "display: block" %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div>
+    <%= form.label :publisher, style: "display: block" %>
+    <%= form.text_field :publisher %>
+  </div>
+
+  <div>
+    <%= form.label :isbn, style: "display: block" %>
+    <%= form.text_field :isbn %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
